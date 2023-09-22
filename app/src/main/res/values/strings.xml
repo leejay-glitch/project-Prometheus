@@ -1,0 +1,55 @@
+<resources>
+    <string name="app_name">Prometheus</string>
+
+    <!-- Train Types -->
+    <string-array name="train_types">
+        <item>Express</item>
+        <item>Inter County</item>
+    </string-array>
+
+    <!-- From Locations -->
+    <string-array name="from_locations">
+        <item>Location 1</item>
+        <item>Location 2</item>
+        <!-- Add more locations as needed -->
+    </string-array>
+
+    <!-- To Locations -->
+    <string-array name="to_locations">
+        <item>Location A</item>
+        <item>Location B</item>
+        <!-- Add more locations as needed -->
+    </string-array>
+
+    <!-- Train Classes -->
+    <string-array name="train_classes">
+        <item>Economy</item>
+        <item>First Class</item>
+    </string-array>
+
+    <!-- Train Times -->
+    <string-array name="train_times">
+        <item>8:00 AM</item>
+        <item>3:00 PM</item>
+        <item>10:00 PM</item>
+        <!-- Add more times as needed -->
+    </string-array>
+
+    <!-- Express Train Times -->
+    <string-array name="express_train_times">
+        <item>3:00 PM</item>
+        <item>10:00 PM</item>
+    </string-array>
+
+    <!-- Inter County Train Times -->
+    <string-array name="inter_county_train_times">
+        <item>8:00 AM</item>
+    </string-array>
+
+    <!-- Default Train Times -->
+    <string-array name="default_train_times">
+        <item>8:00 AM</item>
+        <item>3:00 PM</item>
+        <item>10:00 PM</item>
+    </string-array>
+</resources>

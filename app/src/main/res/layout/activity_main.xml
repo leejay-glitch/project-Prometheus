@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EADCDC">
+
+    <!-- Outer Container -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:layout_margin="16dp">
+
+        <!-- Centered Rectangle with Curved Edges -->
+        <ScrollView
+            android:layout_width="420dp"
+            android:layout_height="866dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="#F27552"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:outlineProvider="background"
+            android:padding="16dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Train Type -->
+                <TextView
+                    android:id="@+id/textViewTrainType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:text="Train Type"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerTrainType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTrainType"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFF" />
+
+                <!-- From -->
+                <TextView
+                    android:id="@+id/textViewFrom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinnerTrainType"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="From"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerFrom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewFrom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFF" />
+
+                <!-- To -->
+                <TextView
+                    android:id="@+id/textViewTo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinnerFrom"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="To"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerTo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFF" />
+
+                <!-- Train Class -->
+                <TextView
+                    android:id="@+id/textViewTrainClass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinnerTo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Train Class"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerTrainClass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTrainClass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFF" />
+
+                <!-- Date -->
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinnerTrainClass"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Date"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <!-- DatePicker -->
+                <DatePicker
+                    android:id="@+id/datePicker"
+                    android:layout_width="308dp"
+                    android:layout_height="302dp"
+                    android:layout_below="@id/textViewDate"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFF" />
+
+                <!-- Time -->
+                <TextView
+                    android:id="@+id/textViewTime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/datePicker"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Time"
+                    android:textColor="#FFF"
+                    android:textSize="18sp" />
+
+                <!-- Spinner (Time Selector) -->
+                <Spinner
+                    android:id="@+id/spinnerTime"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewTime"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:background="#FFF" />
+
+                <!-- Book Train Button -->
+                <Button
+                    android:id="@+id/buttonBookTrain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/spinnerTime"
+                    android:layout_marginTop="30dp"
+                    android:background="#F27552"
+                    android:text="Book Train"
+                    android:textColor="#FFF" />
+            </RelativeLayout>
+        </ScrollView>
+
+        <!-- Ticket and Account Buttons at the Bottom -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonTicket"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:background="#F27552"
+                android:text="Ticket"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/buttonAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#F27552"
+                android:text="Account"
+                android:textColor="#FFF"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="170dp"
+            android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="397dp"
+            android:layout_marginBottom="1138dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold|italic"
+            tools:text="welcome" />
+    </RelativeLayout>
+</RelativeLayout>

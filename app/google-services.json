@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "971186072187",
+    "project_id": "prometheus-26c9b",
+    "storage_bucket": "prometheus-26c9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:971186072187:android:78a4286ca04394a2b9d0de",
+        "android_client_info": {
+          "package_name": "com.example.prometheus"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-t49TxQAx7gq5ViIy0GepUKVx8j2QnWc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
